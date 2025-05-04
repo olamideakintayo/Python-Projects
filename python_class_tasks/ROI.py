@@ -9,4 +9,4 @@ interest_rate = interest_rate / 100
 
 for number in range(1, number_of_investment_years+1):
 	year_amount = investment_amount * (1 + interest_rate) ** number
-	print(f'The Yearly Amount for year {number} is  ${year_amount:,.2f}  at %{interest_rate} interest rate')
+	print(f'The Yearly Amount for year {number} is:  ${year_amount:,.2f}  at %{interest_rate} interest rate')
