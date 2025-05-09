@@ -1,0 +1,12 @@
+RADIUS = float(input('Enter the Radius of the circle: '))
+PI = 3.14159
+DIAMETER = 2 * RADIUS
+CIRCUMFERENCE = 2 * PI * RADIUS
+AREA = PI * (RADIUS ** 2)
+
+print(f'THE AREA OF THE CIRCLE IS: {AREA:.2f}')
+print(f'THE DIAMETER OF THE CIRCLE IS: {DIAMETER:.2f}')
+print(f'THE CIRCUMFERENCE OF THE CIRCLE IS: {CIRCUMFERENCE:.2f}')
+
+
+
