@@ -17,7 +17,7 @@ for number in range(1, 20000, 2):
     
     print(f"{num_terms:>5} {approx_pi:>20.15f}")
     
-    if len(target_approximations) > 0 and round(approx_pi, len(str(target_approximations[vary])) - 2) == target_approximations[0]:
+    if len(target_approximations) > 0 and round(approx_pi, len(str(target_approximations[target_approximations_counter])) - 2) == target_approximations[0]:
         print(f"Approximation of {target_approximations.pop(target_approximations_counter)} Reached at term {num_terms}")
         if len(target_approximations) == 0:
             break
