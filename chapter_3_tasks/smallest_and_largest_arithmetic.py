@@ -3,8 +3,8 @@
 numbers = []
 sum_of_numbers = 0
 product_of_numbers = 1
-smallest_number = float('inf')  
-largest_number = float('-inf')  
+smallest_number = 23453 
+largest_number = -23453  
 
 for number in range(4):
     num = int(input(f"Enter integer {number+1}: "))
