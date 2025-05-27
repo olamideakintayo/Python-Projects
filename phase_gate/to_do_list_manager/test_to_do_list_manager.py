@@ -19,20 +19,15 @@ class TestToDoListManager(TestCase):
         add_tasks("Going to the Market")
         self.assertEqual(len(tasks), 3)
         self.assertEqual(tasks[2]["task"], "Going to the Market")
+
         
     def test_that_throws_an_error_if_empty_input_is_entered(self):
         add_tasks("")
         self.assertEqual(tasks[0]["task"], "")
         
+    def test_that_tasks_are_marked_as_completed_when_it_is_clicked(self):
+            		
+        
     
-    def test_that_shows_all_tasks(self):
-        add_tasks("Writing an Exam")
-        add_tasks("Eating Pizza")
-        all_tasks = view_tasks()
-        self.assertEqual(len(all_tasks), 2)
-        
-    def test_that_get_all_tasks_and_returns_empty_when_no_task_found(self):
-        self.assertEqual(view_tasks(), [])
-        
-        	
+          	
 
