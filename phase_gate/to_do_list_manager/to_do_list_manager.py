@@ -31,7 +31,7 @@ def view_tasks(task):
 def mark_a_task_as_complete(task):
     view_tasks(task)
     try:
-        task_number = int(input("Enter the task number to mark as complete: "))
+        task_number = int(input("Enter the task number to mark as complete: ")).lower()
         if task_number > 0 and task_number <= len(tasks):
             tasks[task_number - 1]["completed"] = True
             print("Task marked as complete.")

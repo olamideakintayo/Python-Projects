@@ -2,7 +2,7 @@
 
 import unittest
 from unittest import TestCase
-from to_do_list_manager import tasks, add_tasks, view_tasks
+from to_do_list_manager import tasks, add_tasks, view_tasks, remove_tasks
 
 class TestToDoListManager(TestCase):
     def setUp(self):
@@ -26,8 +26,13 @@ class TestToDoListManager(TestCase):
         self.assertEqual(tasks[0]["task"], "")
         
     def test_that_tasks_are_marked_as_completed_when_it_is_clicked(self):
-            		
+        task = add_tasks("Eating Beans")
+        view_tasks(task)
+        task = [task -1]
+        self.assertEqual(tasks[0]["completed"], "True")    		
         
-    
+    def test_that_removes_list:
+        add_tasks("crying")
+        remove_tasks(add_tasks -1)    
           	
 
