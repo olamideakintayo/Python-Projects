@@ -35,17 +35,17 @@ def question_ask():
 
         if user_answer == problem['answer']:
             time_taken = round(time.time() - start_time, 2)
-            print(f"Correct! Time taken: {time_taken} seconds")
+            print(f"You are Correct! The Time taken is: {time_taken} seconds")
             answer_count += 1
             return
         else:
             attempts_left -= 1
             if attempts_left > 0:
-                print(f"Wrong! Try again. Attempts left: {attempts_left}")
+                print(f"You are Wrong! Try again. The Attempts left is: {attempts_left}")
             else:
                 time_taken = round(time.time() - start_time, 2)
-                print(f"Wrong again. The correct answer was {problem['answer']}.")
-                print(f"Time taken: {time_taken} seconds")
+                print(f"You are Wrong again. The correct answer was {problem['answer']}.")
+                print(f"The Time taken: {time_taken} seconds")
 
 for _ in range(total_questions):
     question_ask()
