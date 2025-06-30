@@ -7,5 +7,6 @@ def count_letters(word):
             letter_count[letter] = 1
     return letter_count
 
+
 word = input("Enter a word: ")
 print(count_letters(word))
